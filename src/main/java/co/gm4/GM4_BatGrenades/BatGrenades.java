@@ -32,7 +32,7 @@ public class BatGrenades extends JavaPlugin implements Listener{
 
         getLogger().log(Level.INFO, ChatColor.GREEN + "[BatGrenades] Module enabled!");
 
-        Bukkit.getScheduler().runTaskTimerAsynchronously(this,new BatCheck(),0L,5L);
+        Bukkit.getScheduler().runTaskTimer(this,new BatCheck(),0L,20L);
     }
 
     static int getValue(int value){
